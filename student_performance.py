@@ -55,7 +55,7 @@ students_info = {
 # # C = 70–79
 # # D = 60–69
 # # F = below 60
-def average_score(maths_score):
+def grade(maths_score):
   if maths_score >=90:
     return "A"
   elif maths_score >=80:
@@ -66,9 +66,9 @@ def average_score(maths_score):
     return "D"
   else:
     return "F"
-print("Grade :", (average_score(maths_score)))
+print("Grade :", (grade(maths_score)))
 
-average_score(maths_score)
+grade(maths_score)
 
 file_name =json.dumps(students_info)
 print(file_name,".json")
